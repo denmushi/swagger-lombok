@@ -22,7 +22,7 @@ public class Result<T> {
     @ApiModelProperty(value = "响应码", name = "code", required = true, example = "" + SUCCESS_CODE)
     private Integer code;
 
-    @ApiModelProperty(value = "相应信息", name = "msg", required = true, example = SUCCESS_MESSAGE)
+    @ApiModelProperty(value = "响应信息", name = "msg", required = true, example = SUCCESS_MESSAGE)
     private String msg;
 
     @ApiModelProperty(value = "响应数据", name = "data")

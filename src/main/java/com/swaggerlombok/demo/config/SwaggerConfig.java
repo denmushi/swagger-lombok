@@ -11,7 +11,7 @@ import springfox.documentation.spring.web.plugins.Docket;
 import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 /**
- * Swagger配置类
+ * Swagger配置类, 项目启动之后在 http://localhost:8080/swagger-ui.html 打开swagger面板
  *
  * @Author wukq
  * @Time 2019-08-14  15:56
