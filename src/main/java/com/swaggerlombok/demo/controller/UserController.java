@@ -28,4 +28,9 @@ public class UserController implements UserControllerApi {
     public Result<User> addUser(User user){
         return new Result<>(Result.SUCCESS_CODE, Result.SUCCESS_MESSAGE, user);
     }
+
+    @Override
+    public String ignoreTest() {
+        return "ignore";
+    }
 }

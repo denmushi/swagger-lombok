@@ -9,16 +9,12 @@ import org.springframework.web.bind.annotation.*;
 import springfox.documentation.annotations.ApiIgnore;
 
 /**
- * 每一个Controller实现一个对应的ControllerApi接口，
- * Api接口更注重对外的功能展示和文档描写，对于一个比较大的Controller有很好的可读性
- * Controller具体实现功能
- *
  * @Author wukq
- * @Time 2019-08-14  17:41
+ * @Time 2019-08-15  10:34
  */
-@Api(value = "User", tags = {"User"}, description = "用户相关")
-@RequestMapping(value = "/user")
-public interface UserControllerApi {
+@Api(value = "User1", tags = {"User"}, description = "用户相关")
+@RequestMapping(value = "/user1")
+public interface Test {
     /**
      * 这是一个测试接口
      * @return
