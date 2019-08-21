@@ -35,7 +35,7 @@ public interface UserControllerApi {
      */
     @ApiOperation(value = "根据id和name查询一个用户")
     @GetMapping("/getUser/{id}/{name}")
-    User getUser(@PathVariable @ApiParam(value = "这是id", required = true) Integer id,
+    User getUser(@PathVariable @ApiParam(value = "这是id", required = true, example = "1") Integer id,
                  @PathVariable @ApiParam(value = "这是name", required = true) String name);
 
     /**

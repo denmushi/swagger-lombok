@@ -4,6 +4,7 @@ import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 /**
  * 用户Entity类，这里只展示和Swagger，lombok有关的功能
@@ -14,6 +15,7 @@ import lombok.Data;
 @ApiModel(description = "用户Model类")
 @Data
 @AllArgsConstructor
+@NoArgsConstructor
 public class User {
 
     @ApiModelProperty(value = "用户ID", name = "id", example = "1")

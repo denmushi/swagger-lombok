@@ -12,7 +12,7 @@ import springfox.documentation.annotations.ApiIgnore;
  * @Author wukq
  * @Time 2019-08-15  10:34
  */
-@Api(value = "User1", tags = {"User"}, description = "用户相关")
+@Api(value = "Login", tags = {"Login"}, description = "登录")
 @RequestMapping(value = "/user1")
 public interface Test {
     /**
@@ -30,9 +30,9 @@ public interface Test {
      * @return
      */
     @ApiOperation(value = "根据id和name查询一个用户")
-    @GetMapping("/getUser/{id}/{name}")
-    User getUser(@PathVariable @ApiParam(value = "这是id", required = true) Integer id,
-                 @PathVariable @ApiParam(value = "这是name", required = true) String name);
+    @PostMapping("/getUser/{id}/{name}")
+    User getUser(@PathVariable @ApiParam(value = "这是id", required = true, example = "1") Integer id,
+                 @RequestParam @ApiParam(value = "这是name", required = true) String name);
 
     /**
      * 增加一个用户
